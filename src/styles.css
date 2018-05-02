@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+/* Margins */
+.mt25 {
+    margin-top: 25px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mt40 {
+    margin-top: 40px;
+}
+.mtn10 {
+    margin-top: -20px;
+}
+.ml80 {
+    margin-left: 80px;
+}
+
+/* Colors */
+.white {
+    color: white;
+}
+
+/* Widht */
+
+/* Buttons */
+._btn {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: white;
+    line-height: 1;
+    font-family: Roboto;
+    text-align: center;
+    background: rgb(237, 50, 56);
+    border-style: solid;
+    border-color: rgb(2, 117, 216);
+    border-width: 0px;
+    border-radius: 100px;
+    padding: 15px 25px
+}
+
+/* Z-Index */
+.index2 {
+    z-index: 10px;
+}
+
+/* Float */
+.ft-right {
+    float: right;
+}
+.ft-left {
+    float: left;
+}
+.align-center {
+    text-align: center;
+}   

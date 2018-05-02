@@ -1,65 +1,33 @@
-<section id="header">
-            <nav class="navbar navbar-default mainNavbar">
-                    <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                                aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" routerLink="/">
-                                <img id="mainLogo" src="" alt="School Name" (click)="scroll()">
-                            </a>
-                        </div>
-            
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="active">
-                                    <a routerLink="/">Home
-                                        <span class="sr-only">(current)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a routerLink="/aboutus/ourcompany">About Us</a>
-                                </li>
-                                <li>
-                                    <a routerLink="/aboutus/ourcompany">
-                                        Infrastructure
-                                    </a>
-                                </li>
-                                <li>
-                                    <a routerLink="/get-a-quote/quote">Academics</a>
-                                </li>
-                                <li>
-                                    <a routerLink="/faq">Admissions</a>
-                                </li>
-                                <li>
-                                    <a routerLink="/contact">Media</a>
-                                </li>
-                                <li class="visible-xs">
-                                    <a class="font14" routerLink="/registration">
-                                        Contact Us
-                                    </a>
-                                </li>
-                                <li class="visible-xs">
-                                    <a class="font14" routerLink="/login" *ngIf="!isAuthorized">
-                                        LOGIN
-                                    </a>
-                                    <a class="font14" *ngIf="isAuthorized" (click)="logOut();">
-                                        LOGOUT
-                                    </a>
-                                </li>
-                                <li>
-                                    <a *ngIf="isAuthorized" routerLink="/profile">
-                                        <i class="fa fa-user"></i> Profile
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-</section>
+<div id="header">
+    <div class="container">
+        <nav class="navbar navbar-default bg-faded">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed mt25" data-toggle="collapse" data-target="#topMenu"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a routerLink="/">
+                    <img src="../../../assets/brand.png" alt="School Name" (click)="scroll()">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse mt25" id="topMenu">
+                <ul class="nav navbar-nav navbar-right align-center" >
+                    <li class='' *ngFor="let item of navItemList">
+                        <a routerLink="/">{{item.name}}
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class=''>
+                        <a>
+                            <button class="_btn mtn10">Get In Touch</button>     
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
