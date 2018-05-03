@@ -1,13 +1,47 @@
 #header {
     padding: 20px;
-    color: white;
-    background-image: url('../../../assets/header.png');  
+    background-image: url('../../../assets/header.jpg');  
 } 
+#navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+}
 
-.link {
+.Roboto {
+    font-family: Roboto;
+}
+.navbar-nav {
     color: white;
 }
-.bg-faded {
-    background: none;
-    border: none;
+.topMenu {
+    color: white;
+    font-size: 20px;
 }
+.align-top {
+    margin-top: -50px;
+}
+.header-content {
+    margin-top: 100px;
+    color: white;
+}
+.header-content .heading {
+    font-size: 7rem;
+    font-family: Roboto;
+    width: 50%
+}
+.header-content .para {
+    /* position: relative; */
+    font-size: 2.5rem;
+    margin-top: 10px;
+    width: 60%;
+    font-family: Roboto;    
+}
+.header-content .info {
+    margin-top: 40px;
+}
+

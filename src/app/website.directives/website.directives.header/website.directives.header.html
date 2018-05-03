@@ -1,33 +1,48 @@
 <div id="header">
     <div class="container">
-        <nav class="navbar navbar-default bg-faded">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed mt25" data-toggle="collapse" data-target="#topMenu"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a routerLink="/">
-                    <img src="../../../assets/brand.png" alt="School Name" (click)="scroll()">
+        <div>           
+            <nav class="navbar navbar-default" id="navbar">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed mt25" data-toggle="collapse" data-target="#topMenu"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a routerLink="/">
+                        <img src="../../../assets/brand.png" alt="School Name" (click)="scroll()">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse mt25 topMenu">
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li class='Roboto' *ngFor="let item of navItemList">
+                            <a style="color:white;" routerLink="/">{{item.name}}
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a>
+                                <button class="_btn _btn-red align-top">Get In Touch</button>   
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header-content">
+            <div>
+                <h2 class="heading">Providing Best Quality Child Care Since 1985</h2>
+            </div> 
+            <div class="info col-sm-12">
+                <a>
+                    <button class="_btn _btn-red">CONTACT US</button>     
+                </a>
+                <a>
+                    <button class="_btn _btn-default ml60">READ MORE</button>     
                 </a>
             </div>
-
-            <div class="collapse navbar-collapse mt25" id="topMenu">
-                <ul class="nav navbar-nav navbar-right align-center" >
-                    <li class='' *ngFor="let item of navItemList">
-                        <a routerLink="/">{{item.name}}
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class=''>
-                        <a>
-                            <button class="_btn mtn10">Get In Touch</button>     
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        </div>
     </div>
 </div>
