@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+/* Margins */
+.mt20 {
+    margin-top: 20px;
+}
+.mt25 {
+    margin-top: 25px;
+}
+.mt40 {
+    margin-top: 40px;
+}
+.mtn50 {
+    margin-top: -50px;
+}
+.ml60 {
+    margin-left: 60px;
+}
+
+/* Colors */
+.white {
+    color: white;
+}
+
+/* Widht */
+
+/* Buttons */
+._btn-red {
+    background: rgb(237, 50, 56);
+    border-color: rgb(255, 255, 255);
+    
+}
+._btn-default {
+    background: rgba(0, 0, 0, 0);
+    border-color: rgb(255, 255, 255);    
+}
+._btn {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: white;
+    line-height: 1;
+    font-family: Roboto;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 100px;
+    padding: 15px 25px
+}
+
+/* Z-Index */
+.index2 {
+    z-index: 10px;
+}
+
+/* Float */
+.ft-right {
+    float: right;
+}
+.ft-left {
+    float: left;
+}
+/* Align */
+.align-center {
+    text-align: center;
+}   
+.align-left {
+    text-align: left;
+}  
+.align-right {
+    text-align: left;
+}  
+
+/* Font Size */
+.font2 {
+    font-size: 2rem; 
+}
+.font25 {
+    font-size: 2.5rem; 
+}
+.font3 {
+    font-size: 3rem; 
+}
+.font35 {
+    font-size: 3.5rem; 
+}
+.font4 {
+    font-size: 5rem; 
+}
+
+/* Position */
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}

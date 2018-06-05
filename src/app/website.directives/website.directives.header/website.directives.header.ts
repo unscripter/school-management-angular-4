@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./website.directives.header.css']
 })
 export class WebsiteHeader {
-  title = 'app';
+    navItemList = [];
+    constructor() {
+        this.navItemList = [{name: 'About Us', class: 'nav-link active'},{name: 'Admissions', class: 'nav-link active'},{name: 'Academics', class: 'nav-link active'},{name: 'Blog', class: 'nav-link active'},{name: 'Research', class: 'nav-link active'},{name: 'Contact Us', class: 'nav-link active'}];
+    }
 }
